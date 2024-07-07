@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Pavanam</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="#"><img src="search.png" alt="Search" height="35px" width="35px" ></a>
+            <a href="#"><img src="User.png" alt="User" height="35px" width="35px"></a>
+            <a href="#"><img src="cart.png" alt="Cart" height="35px" width="35px"></a>
+        </div>
+    </header>
+    
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to PAVANAM</h1>
+            <h1>Delicious Moments, Every Day!</h1>
+            <div class="hero-buttons">
+                <button onclick="window.location.href='#order'">Order now</button>
+                <button onclick="window.location.href='#reservation'">Reservation</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="menu">
+        <h2>Explore Dishes</h2>
+        <div class="dish-grid">
+            <div class="dish-tile">
+                <img src="thali.jpg" alt="Dish 1" height="150px" width="150px">
+                <div class="dish-info">
+                    <h3>Indian Thali</h3>
+                    <div>Experience the true essence of Indian cuisine with our exquisite Indian Thali. A symphony of flavors, colors, and textures, our Thali offers a culinary journey through India’s diverse gastronomic landscape. Each component is thoughtfully curated to provide a balanced and wholesome meal that tantalizes the taste buds.
+                        <p>            </p>
+                        Paneer Butter Masala, Dal Tadka,
+                        Mixed Vegetable Curry,
+                        Aloo Gobi,
+                        Rice or Pulao,
+                        Chapati or Naan,
+                        Raita,
+                        Pickle & Chutney,
+                        Papad,
+                        Dessert.</div>
+                </div>
+            </div>
+            <div class="dish-tile">
+                <img src="chineese.jpg" alt="Dish 2" height="150px" weight="150px">
+                <div class="dish-info">
+                    <h3>Chinese Platter</h3>
+                    <div>Indulge in our delectable Chinese Platter, a fusion of traditional Chinese flavors with a touch of Indian zest. Perfect for those who love a harmonious blend of taste and texture, our Chinese Platter is crafted to provide a satisfying and flavorful dining experience.
+                        <p>            </p>
+                        Veg Manchurian,Chilli Paneer,Veg Hakka Noodles,Fried Rice,Spring Rolls,Hot and Sour Soup,Dumplings.</div>
+                </div>
+                </div>
+            </div>
+            <div class="dish-tile">
+                <img src="chat.webp" alt="Dish 3">
+                <div class="dish-info">
+                    <h3>Indian Chaat</h3>
+                    <div>Explore the vibrant flavors of India with our irresistible Indian Chaat selection. Perfect for those who crave a burst of tangy, spicy, and sweet flavors in every bite, our chaat dishes are a celebration of India's street food culture.
+                        <p>            </p>
+                        Pani Puri,Bhel Puri,Sev Puri,Aloo Tikki Chaat,Papdi Chaat,Dahi Puri.</div>
+                </div>
+                </div>
+            </div>
+            <div class="dish-tile">
+                <img src="sweet.jpg" alt="Dish 3">
+                <div class="dish-info">
+                    <h3>Kuchh Meetha ho Jaaye!!!</h3>
+                    <div>Indulge in our exquisite selection of traditional Indian sweets, each crafted with care to bring you a taste of authentic flavors and textures.
+                        <p>            </p>
+                        Gulab Jamun,Rasgulla,Jalebi,Ladoo (Besan, Motichoor),Barfi (Kaju, Badam),Halwa (Sooji, Gajar),Rasmalai.</div>
+                </div>
+                </div>
+            </div>
+            <div class="dish-tile">
+                <img src="drinks.jpg" alt="Dish 3">
+                <div class="dish-info">
+                    <h3>Party-Sharty!!</h3>
+                    <div>Quench your thirst with our refreshing selection of Indian party drinks, perfect for any occasion. Whether you're toasting to celebrations or simply enjoying good company, these drinks are sure to elevate your party with their vibrant flavors and invigorating charm.
+                        <p>            </p>
+                        Lemon soda, Thandi Lassi, Badam shake, Mocktails,etc.</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p >Welcome to Pavanam, where culinary excellence meets a warm, welcoming atmosphere. Our chefs are dedicated to bringing you the finest dishes crafted with the freshest ingredients. Whether you're here for a family dinner, a special celebration, or a casual meal with friends, we strive to make every visit memorable.</p>
+        <p>Our story began in 2018, with a passion for creating delicious food and a commitment to outstanding service. Since then, we have become a beloved part of the community, known for our authenticity and unforgetful flavors. We invite you to join us and experience the flavors, hospitality, and ambiance that make Pavanam a favorite dining destination.</p>
+        <p>Thank you for choosing Pavanam. We look forward to serving you!</p>
+    </section>
+    
+    <section id="order">
+        <h2>Order Now</h2>
+        <button id="orderNowButton">Order Now</button>
+        <div id="orderForm" style="display: none;">
+            <label for="dish">Choose a dish:</label>
+            <select id="dish" multiple>
+                <option value="Indian thali ordered for value Rs 449">Indian Thali   ------>      Rs 449/-</option>
+                <option value="Chinee platter ordered for value Rs 359 ">Chinese Platter    ------>       Rs 359/-</option>
+                <option value="Indian Chaat ordered for value Rs 169">Indian Chaat   ------>         Rs 169/-</option>
+                <option value="Sweets ordered for value Rs 399">Sweets     ------>       Rs 399/-</option>
+                <option value="Drinks ordered for value Rs 149">Drinks   ------>         Rs 149/-</option>
+            </select>
+            <button id="submitOrder">Submit</button>
+        </div>
+    </section>
+    
+    
+    <section id="reservation">
+        <h2>Reservation</h2>
+        <button id="bookSeatButton">Book a Seat</button>
+        <script>
+            document.getElementById("bookSeatButton").addEventListener("click", function() {
+                alert("Your seat has been booked successfully! We will contact you soon to confirm the details.");
+            });
+        </script>
+    </section>
+    <section id="blog">
+        <h3>Blogs</h3>
+        <p>Share your experience with us.</p>
+        <form>
+          <textarea id="blog-text" placeholder="
+            In the morning light, a feast begins,
+            With crispy toast and buttered whims.
+            A splash of orange, a sip of brew,
+            A day anew, with flavors true.
+          
+            Noon arrives with hearty fare,
+            Sandwiches stacked with tender care.
+            Salads crisp and soups that steam,
+            A midday dream, a tasty theme.
+          
+            Evening falls, the kitchen glows,
+            A symphony of sizzles, scents, and shows.
+            Savory bites and sweet delights,
+            A dinner bright, in starry nights.
+          
+            Food, you bring us joy and cheer,
+            In every bite, you're always near.
+            From dawn to dusk, we savor you,
+            Our constant love, forever true."></textarea>
+          <button id="submit-blog">Submit</button>
+        </form>
+        <div id="popup" style="display: none;">
+            <p>Thank you for sharing your valuable experience. Have a nice day!</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: infopavanam@gmail.com</p>
+        <p>Phone: +91-9027224116</p>
+        <p>Address: Chaurasi Khamba, Raman Reti, Mathura, India</p>
+        <p>Mathura, India</p>
+    </section>
+    
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Pavanam. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
