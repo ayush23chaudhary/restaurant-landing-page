@@ -311,18 +311,33 @@ footer {
 }
 
 @media (max-width: 768px) {
-    nav ul {
+    header nav ul {
         flex-direction: column;
     }
     
-    .hero-content {
-        padding: 10px;
+    header nav ul li {
+        margin: 10px 0;
+    }
+    
+    .hero-section {
+        height: auto;
+        padding: 20px;
     }
     
     .hero-buttons button {
-        margin: 5px;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .dish-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .dish-tile {
+        margin-bottom: 20px;
     }
 }
+
 @keyframes fadeOut {
     0% {
       opacity: 1;
